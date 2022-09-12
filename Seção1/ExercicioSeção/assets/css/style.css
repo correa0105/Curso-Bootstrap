@@ -1,0 +1,17 @@
+.container {
+    border: 2px solid red;
+    height: auto;
+}
+
+.container .col {
+    height: 45px;
+    border: 1px dashed black;
+}
+
+.container .col:nth-child(2n+1) {
+    background-color: rgb(140, 140, 240);
+}
+
+.container .col:nth-child(2n+2) {
+    background-color: rgb(93, 244, 171);
+}

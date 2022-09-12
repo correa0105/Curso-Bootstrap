@@ -1,0 +1,29 @@
+.container {
+    height: auto;
+    border: 2px solid blueviolet;
+}
+
+.container .row {
+    height: auto;
+    border: 1px dotted green;
+}
+
+.container .bi {
+    font-size: 2rem;
+}
+
+.bi-terminal {
+    color: brown;
+}
+
+.bi-tablet-landscape-fill {
+    color: orange;
+}
+
+.bi-tools {
+    color: cadetblue;
+}
+
+/* .container .row>* {
+    width: auto;
+} */

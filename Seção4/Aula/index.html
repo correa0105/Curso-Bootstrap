@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <script src="./assets/js/script.js" defer></script>
+
+    <title>Bootstrap Formualario</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- CRIANDO UM FORMULÁRIO -->
+
+        <div class="col-4 m-4">
+            <h3>Formulario de Registro</h3>
+            <form action="">
+                <div class="mb-4">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                        placeholder="Insira seu email">
+                    <div id="emailHelp" class="form-text">Não compartilhamos seu endereço de email.</div>
+                </div>
+                <div class="mb-4">
+                    <label for="password" class="form-label">Senha</label>
+                    <input type="password" class="form-control" id="password" placeholder="Insira sua senha">
+                </div>
+                <div class="mb-2">
+                    <label for="fone" class="form-label">Fone</label>
+                    <input type="tel" class="form-control" id="fone" placeholder="Insira seu celular" disabled>
+                </div>
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </form>
+        </div>
+
+        <!-- FORM CONTROL -->
+
+        <div class="m-4">
+            <h3>CRIE SEU POST</h3>
+            <form action="">
+                <div class="col-4 mb-4">
+                    <label for="title" class="form-label">Titulo do Post</label>
+                    <input type="text" class="form-control" id="title" placeholder="Digite seu titulo">
+                </div>
+                <div class="col-4 mb-4">
+                    <label for="content" class="form-label">Conteudo</label>
+                    <textarea placeholder="Digite seu texto..." class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Enviar</button>
+            </form>
+        </div>
+
+        <!-- READ ONLY -->
+
+        <div class="col-4 m-4">
+            <h3>Formulario de Registro</h3>
+            <form action="">
+                <div class="mb-4">
+                    <label for="email1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email1" aria-describedby="emailHelp"
+                        placeholder="Insira seu email" readonly value="correa.l@icloud.com">
+                    <div id="emailHelp" class="form-text">Não compartilhamos seu endereço de email.</div>
+                </div>
+                <div class="mb-4">
+                    <label for="email2" class="form-label">Email</label>
+                    <input type="email" class="form-control-plaintext" id="email2" aria-describedby="emailHelp"
+                        placeholder="Insira seu email" readonly value="correa.l@icloud.com">
+                    <div id="emailHelp" class="form-text">Não compartilhamos seu endereço de email.</div>
+                </div>
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </form>
+        </div>
+
+        <!-- INPUT DE ARQUIVOS -->
+
+        <div class="col-4 m-4">
+            <h2>Teste de INPUT de arquivos</h2>
+            <form action="">
+                <div class="mb-4">
+                    <label for="foto" class="class-label">Envie apenas 1 foto</label>
+                    <input type="file" class="form-control" id="foto">
+                </div>
+                <div class="mb-4">
+                    <label for="fotos" class="class-label">Envie varias fotos</label>
+                    <input type="file" class="form-control" id="fotos" multiple>
+                </div>
+            </form>
+        </div>
+
+        <!-- TIPOS DE INPUT -->
+
+        <div class="col-4 m-4">
+            <form action="">
+                <div class="mb-4">
+                    <h2>Data List</h2>
+                    <label for="cidades" class="form-label">Selecione uma cidade</label>
+                    <input class="form-control" list="datalistOptions" id="cidades" placeholder="Selecione sua cidade">
+                    <datalist id="datalistOptions">
+                        <option value="Canoas"></option>
+                        <option value="Porto Alegre"></option>
+                        <option value="Cachoeirinha"></option>
+                    </datalist>
+                </div>
+                <div class="mb-4">
+                    <h2>Input de Cor</h2>
+                    <label for="cor" class="form-label">Selecione a cor</label>
+                    <input type="color" class="form-control form-control-color" id="cor" value="#000"
+                        title="Escolha uma cor">
+                </div>
+                <div class="mb-4">
+                    <h2>Select</h2>
+                    <label class="form-label" for="opcoes">Selecione uma opção</label>
+                    <select class="form-select" name="opcoes" id="opcoes">
+                        <!-- PODE-SE COLOCAR ATRIBUTO MULTIPLE -->
+                        <option selected>Selecione uma opção...</option>
+                        <option value="1">Opt 1</option>
+                        <option value="2">Opt 2</option>
+                        <option value="3">Opt 3</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+
+        <!-- CHECKBOX E RADIO BUTTON -->
+
+        <div class="m-4">
+            <h2>Marque as opções</h2>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="privacidade">
+                <label for="privacidade" class="form-check-label">Aceito os termos de privacidade</label>
+            </div>
+        </div>
+
+        <div class="m-4">
+            <h2>Escolha!</h2>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="radio-buttons" id="radio1" value="1">
+                <label for="radio1" class="form-check-label">Aceito os termos de privacidade</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="radio-buttons" id="radio2" value="2">
+                <label for="radio2" class="form-check-label">Aceito os termos de privacidade</label>
+            </div>
+        </div>
+
+        <!-- CHECKBOX SWITCH -->
+
+        <div class="m-4">
+            <h2>Ligar a luz</h2>
+            <div class="form-check form-switch">
+                <input type="checkbox" class="form-check-input" id="switch">
+                <label for="switch" class="form-check-label">Clique para ligar</label>
+            </div>
+        </div>
+
+        <div class="col-4 m-4">
+
+            <!-- RANGE BUTTON -->
+            <div class="mb-4">
+                <h2>Selecione</h2>
+                <label for="numero" class="form-label">Selecione um numero</label>
+                <input type="range" class="form-range" min="1" max="5" id="numero">
+            </div>
+
+            <!-- AGRUPAMENTO -->
+            <div class="input-group mb-4">
+                <span class="input-group-text" id="basic-addon">@</span>
+                <input type="email" class="form-control" placeholder="Digite seu email">
+            </div>
+
+            <p>Quanto você quer depositar?</p>
+            <div class="input-group mb-4">
+                <span class="input-group-text">R$</span>
+                <input type="text" class="form-control" placeholder="Digite o valor">
+                <span class="input-group-text">,00</span>
+            </div>
+
+            <!-- LABEL FLUTUANTE -->
+
+            <h2>Faça login para continuar</h2>
+            <div class="form-floating mb-3">
+                <input class="form-control" type="email" id="email" placeholder="Insira seu email">
+                <label for="email">Email</label>
+            </div>
+
+        </div>
+
+        <!-- LAYOUTS COM FORMS -->
+
+        <div class="container col-6 mb-4">
+            <h2 class="text-center">Cadastre-se</h2>
+            <form action="" class="row g-3">
+                <div class="col-md-6">
+                    <label for="email3" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email3" placeholder="Digite seu email">
+                </div>
+                <div class="col-md-6">
+                    <label for="password1" class="form-label">Senha</label>
+                    <input type="password" class="form-control" id="password1" placeholder="Digite sua senha">
+                </div>
+                <div class="col-md-12">
+                    <label for="cep" class="form-label">CEP</label>
+                    <input type="text" class="form-control" id="cep" placeholder="Digite seu CEP">
+                </div>
+                <div class="col-md-10">
+                    <label for="rua" class="form-label">Rua</label>
+                    <input type="text" class="form-control" id="rua" placeholder="Sua rua">
+                </div>
+                <div class="col-md-2">
+                    <label for="numero1" class="form-label">Numero</label>
+                    <input type="text" class="form-control" id="numero1" placeholder="N°">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <br><br><br><br><br>
+
+    <!-- VALIDAÇÃO COM FORMULARIO -->
+
+    <div class="container">
+        <div class="row justify-content-center m-4">
+            <div class="col-6">
+                <h2>Faça seu Login para continuar</h2>
+                <form class="row needs-validations" novalidate>
+                    <div class="col-12 mb-4">
+                        <label for="email5" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email5" placeholder="Digite seu email" required>
+                        <div class="valid-feedback">Ok!</div>
+                    </div>
+                    <div class="col-12 mb-4">
+                        <label for="celular1" class="form-label">Celular</label>
+                        <input type="tel" class="form-control" id="celular1" placeholder="Digite seu celular" required>
+                        <div class="valid-feedback">Ok!</div>
+                    </div>
+                    <div class="col-12 mb-4">
+                        <button class="btn btn-primary" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

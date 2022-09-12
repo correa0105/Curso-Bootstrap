@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>Elementos Conteudo</title>
+</head>
+
+<body>
+
+    <!-- HEADERS -->
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <h1>Texto 1</h1>
+                <h2>Texto 2</h2>
+                <h3>Texto 3</h3>
+            </div>
+            <div class="col-2">
+                <p class="h1">Texto 1</p>
+                <p class="h2">Texto 2</p>
+                <p class="h3">Texto 3</p>
+            </div>
+        </div>
+
+        <br><br>
+
+        <!-- DISPLAY -->
+
+        <h1>H1 NORMAL</h1>
+        <h1 class="display-1">H1 COM DISPLAY-1</h1>
+        <p1 class="display-4">P1 COM DISPLAY-4</p1>
+
+        <!-- ELEMENTOS INLINE -->
+
+        <p>ISSO ERA DESTACADO: <mark>Texto Destacado, com Tag</mark></p>
+        <p>ISSO ERA DESTACADO: <span class="mark">Texto Destacado, com Classe</span></p>
+
+        <br>
+
+        <p>Lista de Tarefas</p>
+        <p><del>ATIVIDADE 1</del></p>
+        <p><span class="text-decoration-line-through">ATIVIDADE 2</span></p>
+
+        <!-- CITAÇÕES -->
+
+        <blockquote class="blockquote">
+            <p>CITAÇÃO QUALQUER, AUTOR QUALQUER</p>
+        </blockquote>
+
+        <figure>
+            <blockquote class="blockquote">
+                <p>CITAÇÃO QUALQUER UTILIZANDO FIGURE E FIGCAPTION</p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+                Uma frase de <cite title="Lucas Corrêa">Lucas Corrêa</cite>
+            </figcaption>
+        </figure>
+
+        <!-- LISTAS -->
+
+        <h1>LISTA SEM ESTILO</h1>
+        <ul class="list-unstyled">
+            <li>ITEM 1</li>
+            <li>ITEM 2</li>
+            <li>ITEM 3</li>
+        </ul>
+
+        <h1>LISTA INLINE</h1>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#">ITEM 1</a></li>
+            <li class="list-inline-item"><a href="#">ITEM 2</a></li>
+            <li class="list-inline-item"><a href="#">ITEM 3</a></li>
+        </ul>
+
+        <!-- IMAGEM FLUIDA -->
+
+        <div class="row">
+            <div class="col-md-3 m-2">
+                <img class="img-fluid" src="./assets/img/AguiaWallPaper.jpg" alt="">
+            </div>
+            <div class="col-md-3 m-2">
+                <img class="img-fluid" src="./assets/img/AguiaWallPaper.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- THUMBNAIL -->
+
+        <div class="row justify-content-center">
+            <div class="col-md-3 m-3">
+                <img class="img-thumbnail" src="./assets/img/AguiaWallPaper.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- FIGURE -->
+
+        <div class="col-md-3 m4">
+            <figure class="figure">
+                <img src="./assets/img/AguiaWallPaper.jpg" alt="" class="figure-img img-fluid rounded">
+                <figcaption class="figure-caption">Aguia Full HD</figcaption>
+            </figure>
+        </div>
+
+        <!-- TABELAS -->
+
+        <div class="col-6">
+            <table class="table m-4">
+                <thead>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Contato</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Lucas</th>
+                        <td>correa.l@icloud.com</th>
+                        <td>51997292242</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Vitor</th>
+                        <td>vitor.test@icloud.com</th>
+                        <td>51998654788</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Guilherme</th>
+                        <td>51998623544</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-6 m-4">
+            <table class="table table-dark table-striped">
+                <thead>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Contato</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Lucas</th>
+                        <td>correa.l@icloud.com</th>
+                        <td>51997292242</th>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Guilherme</th>
+                        <td>51998623544</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</body>
+
+</html>

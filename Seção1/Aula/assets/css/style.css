@@ -1,0 +1,74 @@
+.container {
+    background-color: #999;
+    border: 5px dotted salmon;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.container-fluid {
+    background-color: antiquewhite;
+    margin-bottom: 15px;
+}
+
+.container-sm {
+    border: 2px solid rosybrown;
+    margin-bottom: 15px;
+}
+
+.container-md {
+    border: 2px solid greenyellow;
+    margin-bottom: 15px;
+}
+
+.container-lg {
+    border: 2px solid aquamarine;
+    margin-bottom: 15px;
+}
+
+.row {
+    border: 5px solid plum;
+    height: 100px;
+    padding: 10px;
+    margin: 0;
+}
+
+.col, #largura-limitada .col-4, #largura-limitada .col-6, .col-2, .col-1, .col-11 {
+    border: 2px dashed red;
+    height: 100%;
+    margin: 0;
+}
+
+#largura-limitada {
+    max-width: 500px;
+}
+
+#vertical {
+    height: 250px;
+    border-color: coral;
+}
+
+#vertical .row {
+    height: 100%;
+}
+
+#vertical .col-6, #vertical .col-3 {
+    height: 50px;
+    border: 2px dashed sienna;
+}
+
+#vertical-offset .col-4 {
+    height: auto;
+    border: 2px solid red;
+}
+
+#gutter .row {
+    height: 200px;
+}
+
+#gutter .col-6 {
+    margin: auto;
+}
+
+.row p {
+    border: 2px solid green;
+}
