@@ -1,0 +1,11 @@
+.card {
+    width: 200px;
+}
+
+.progress-bar {
+    width: 25%;
+}
+
+.position-fixed {
+    z-index: 100;
+}
