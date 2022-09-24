@@ -1,0 +1,21 @@
+body {
+    padding-bottom: 1000px;
+}
+
+.col-12 {
+    height: 50px;
+}
+
+.altura {
+    height: 200px;
+    background-color: aquamarine;
+}
+
+.box {
+    border: 2px solid red;
+}
+
+.box-comwrap {
+    width: 50px;
+    border: 2px solid red;
+}

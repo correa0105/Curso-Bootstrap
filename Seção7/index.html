@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <script src="./assets/js/script.js" defer></script>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>Utilities Bootstrap</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- BACKGROUND -->
+        <div class="col-12 mb-3 bg-primary"></div>
+        <div class="col-12 mb-3 bg-danger"></div>
+        <div class="col-12 mb-3 bg-success bg-gradient"></div>
+
+        <!-- BORDAS -->
+
+        <div class="col-12 mb-3 border-top border-4 border-danger bg-warning"></div>
+        <div class="col-12 mb-3 border border-bottom-0 border-4 border-danger bg-success"></div>
+        <div class="col-12 mb-3 border border-4 border-info bg-success rounded-pill"></div>
+
+        <!-- CORES -->
+        <h1 class="text-primary">TESTE</h1>
+        <h1 class="text-primary bg-info">TESTE</h1>
+
+        <!-- DISPLAY -->
+        <div class="d-none">ESTA OCULLTO</div>
+        <span class="d-block bg-primary">ESTE É UM P</span>
+        <div class="d-inline bg-success">ISTO É UMA DIV</div>
+        <div class="d-inline bg-info">ISTO É UMA DIV</div>
+        <div class="d-inline bg-danger">ISTO É UMA DIV</div>
+
+        <!-- FLEX -->
+        <div class="mt-md-4 d-flex justify-content-between">
+            <div class="bg-primary">1</div>
+            <div class="bg-danger">2</div>
+            <div class="bg-success">3</div>
+        </div>
+
+        <!-- ITERAÇÕES -->
+        <p class="user-select-all">Selecione tudo clicando em qualquer lugar</p>
+        <p class="user-select-none">Não é possivel selecionar</p>
+        <p>Você não pode clicar nesse <a href="#" class="pe-none">Link</a></p>
+
+        <!-- SOMBRAS -->
+        <div class="mb-4 shadow-sm">Sombra pequena</div>
+        <div class="mb-4 shadow">Sombra pequena</div>
+        <div class="mb-4 shadow-lg">Sombra pequena</div>
+
+        <!-- LARGURA E ALTURA -->
+        <div class="w-25 bg-primary">TESTE</div>
+        <div class="altura">
+            <div class="h-25 bg-success"></div>
+        </div>
+
+        <!-- ESPAÇAMENTO -->
+        <div class="p-0 m-0 box">Qualquer coisa</div>
+        <div class="p-3 m-3 box">Qualquer coisa</div>
+        <div class="p-5 m-5 box">Qualquer coisa</div>
+
+        <!-- TEXT -->
+        <p class="text-center">TEXTO NO CENTRO</p>
+        <p class="text-nowrap box-comwrap">TEXTO PASSANDO DA CAIXA</p>
+        <p class="text-uppercase">TEXTO pasSando DA cAixa</p>
+        <p class="fs-5">Qualquer coisa</p>
+        <div class="fw-bold">Texto em negrito</div>
+        <div class="fst-italic">Fonte em italico</div>
+    </div>
+    
+</body>
+</html>

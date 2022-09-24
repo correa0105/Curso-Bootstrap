@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>Helpers Bootstrap</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- POSIÇÃO STICKY -->
+        <div class="sticky-top box-sticky"></div>
+
+        <!-- COM CLEARFIX -->
+        <div class="clearfix mt-4">
+            <div class="box float-end"></div>
+        </div>
+        <div class="box"></div>
+
+        <!-- SEM CLEARFIX -->
+        <div class="mt-4">
+            <div class="box float-end"></div>
+        </div>
+        <div class="box"></div>
+
+        <!-- LINKS COLORIDOS -->
+        <div class="container m-4">
+            <a href="#" class="link-primary">Link Primary</a> <!-- LINKS COLORIDO ASSIM COMO BOTÕES -->
+            <button class="btn btn-primary">Botão Primary</button>
+        </div>
+
+        <!-- RATIO -->
+        <div class="container">
+            <div class="col-md-4 mb-4">
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/U2anDg4j3IU?list=RDU2anDg4j3IU" allowfullscreen></iframe>
+                </div>
+                <iframe src="https://www.youtube.com/embed/U2anDg4j3IU?list=RDU2anDg4j3IU" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- POSIÇÃO FIXED -->
+        <div class="fixed-bottom box-fixed"></div>
+
+        <!-- VISUALLY HIDDEN -->
+        <h2 class="visually-hidden">Qualquer coisa escrita aqui</h2>
+        <p class="visually-hidden-focusable">Aparece quando tem <a href="#">Foco</a></p>
+
+        <!-- LINK ELEMENTO -->
+        <div class="container m-4">
+            <div class="card" style="width: 18rem">
+                <img src="https://s.udemycdn.com/partner-logos/v4/netapp-light.svg" alt="Imagem Teste">
+                <div class="card-body">
+                    <h5 class="card-title">Qualquer coisa</h5>
+                    <p class="card-text">Descrição card</p>
+                    <a href="https://google.com" class="btn btn-success stretched-link">Link teste</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- TEXTO TRUNCADO -->
+        <div class="row">
+            <div class="col-4 text-truncate">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos voluptate obcaecati in aut expedita illum
+                vel ducimus corporis dolore ea, delectus necessitatibus laboriosam a voluptatibus eveniet nihil.
+                Corporis, et harum!
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
